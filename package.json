@@ -1,0 +1,10 @@
+{
+  "name": "survival-wilderness",
+  "version": "15.0.0",
+  "private": true,
+  "description": "Survival life-sim MMO 2D pixel (HTML5 canvas) + server akun/multiplayer",
+  "main": "server/server.js",
+  "scripts": { "start": "node server/server.js" },
+  "engines": { "node": ">=18" },
+  "optionalDependencies": { "ws": "^8.18.0", "pg": "^8.13.0" }
+}

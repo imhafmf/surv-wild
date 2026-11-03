@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Survival Wilderness</title>
+<link rel="stylesheet" href="css/style.css?v=15">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud"></div>
+
+<div id="joyzone">
+  <div id="joybase"><div id="joyknob"></div></div>
+</div>
+<button id="btnA">AKSI</button>
+<button id="btnB">TAS</button>
+<div id="hotbar">
+  <div id="hlabel"></div>
+  <div class="hrow">
+    <div class="hs sq" id="hs0" data-k="s0"></div><div class="hs sq" id="hs1" data-k="s1"></div>
+    <div class="hs sq" id="hs2" data-k="s2"></div><div class="hs sq" id="hs3" data-k="s3"></div>
+  </div>
+  <div class="hrow">
+    <div class="hs ci" id="hc0" data-k="c0"></div><div class="hs ci" id="hc1" data-k="c1"></div><div class="hs ci" id="hc2" data-k="c2"></div>
+  </div>
+</div>
+<div id="craft"></div>
+<div id="bag"></div>
+<button id="btnM">MENU</button>
+<canvas id="minimap" width="80" height="80"></canvas>
+<div id="shop"></div>
+<div id="signp"></div>
+<div id="pbp"></div>
+<div id="bigmap">
+  <div class="ch">Peta <span id="mx">X</span></div>
+  <canvas id="bmc"></canvas>
+  <div class="mrow"><button id="mzo">&minus;</button><button id="mzi">+</button><button id="mhome">Posisiku</button></div>
+  <div class="mrow"><input id="pinname" maxlength="16" placeholder="Nama pin"><button id="pinadd">Tancap pin</button></div>
+  <div id="pinlist"></div>
+</div>
+<div id="board"></div>
+<button id="btnChat">CHAT</button>
+<div id="chatlog"></div>
+<div id="chatp">
+  <div class="ch">Chat <span id="cclose">X</span></div>
+  <div id="clog"></div>
+  <div class="crow"><input id="cin" maxlength="100" placeholder="Pesan, atau /help" autocomplete="off" autocapitalize="off"><button id="csend">Kirim</button></div>
+  <div class="cq"><button data-q="/help">Bantuan</button><button data-q="/teman">Teman</button><button data-q="/online">Online</button></div>
+</div>
+
+<div id="menu">
+  <div class="mbox">
+    <h1>Survival<br>Wilderness</h1>
+    <p>Hidup, bekerja, dan bertahan di desa dan alam liar.</p>
+    <div id="mmain">
+      <button id="mCont">Lanjutkan</button>
+      <button id="mAcc">Akun online</button>
+      <button id="mSkin">Karakter</button>
+      <button id="mSet">Pengaturan</button>
+      <button id="mNew">Game Baru</button>
+      <small id="mnote"></small>
+    </div>
+    <div id="setp"></div>
+    <div id="skinp"></div>
+    <div id="authp">
+      <h2>Akun online</h2>
+      <div id="aSrvBox"><input id="aSrv" placeholder="Alamat server, mis. http://1.2.3.4:3000" autocomplete="off" autocapitalize="off"></div>
+      <div id="aIn"><input id="aUser" placeholder="Nama (huruf kecil/angka/_)" autocomplete="off" autocapitalize="off" maxlength="16">
+      <input id="aPass" type="password" placeholder="Sandi (min 6 huruf)" autocomplete="off" maxlength="64">
+      <button id="aLogin">Masuk</button><button id="aReg" class="opt2">Daftar akun baru</button></div>
+      <div id="aOutBox"><p id="aWho"></p><button id="aOut" class="opt2">Keluar akun</button></div>
+      <small id="aMsg"></small>
+      <button id="aBack">Kembali</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/settings.js?v=15"></script>
+<script src="js/net.js?v=15"></script>
+<script src="js/mp.js?v=15"></script>
+<script src="js/skin.js?v=15"></script>
+<script src="js/game/plants.js?v=15"></script>
+<script src="js/game/world.js?v=15"></script>
+<script src="js/game/bag.js?v=15"></script>
+<script src="js/game/economy.js?v=15"></script>
+<script src="js/game/orders.js?v=15"></script>
+<script src="js/game/hotbar.js?v=15"></script>
+<script src="js/game/player.js?v=15"></script>
+<script src="js/game/farm.js?v=15"></script>
+<script src="js/game/animals.js?v=15"></script>
+<script src="js/game/crafting.js?v=15"></script>
+<script src="js/engine/renderer.js?v=15"></script>
+<script src="js/engine/input.js?v=15"></script>
+<script src="js/ui/icons.js?v=15"></script>
+<script src="js/ui/hud.js?v=15"></script>
+<script src="js/ui/minimap.js?v=15"></script>
+<script src="js/ui/chat.js?v=15"></script>
+<script src="js/main.js?v=15"></script>
+</body>
+</html>
